@@ -17,6 +17,7 @@ const Hero = ({ title = 'Become a React dev', subtitle = 'Find the React that fi
               }          </p>
           </div>
         </div>
+
       </section>
 
     </>
