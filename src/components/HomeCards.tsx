@@ -1,10 +1,8 @@
-import Card from "./Card"
+import Card from "./Card";
+
 const HomeCards = () => {
     return (
         <>
-            <Card />
-
-            mayay
             <section className="py-4">
                 <div className="container-xl lg:container m-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
@@ -33,13 +31,11 @@ const HomeCards = () => {
                                 Add Job
                             </a>
                         </Card>
-
-
                     </div>
                 </div>
             </section>
         </>
-    )
-}
+    );
+};
 
-export default HomeCards
+export default HomeCards;
