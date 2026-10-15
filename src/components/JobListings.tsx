@@ -1,8 +1,9 @@
-import jobs from "../jobs.json"
 import JobListing from "./JobListing"
+import jobs from "../jobs.json"
 
 
 const JobListings = () => {
+    const recentJobs = jobs.slice(0, 3)
     return (
         <>
             <section className="bg-blue-50 px-4 py-10">
@@ -11,10 +12,7 @@ const JobListings = () => {
                         Browse Jobs
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {jobs.map((item) => (
-                            <JobListing key={item.id} item={item} />
-                        ))}
-
+                        {recentJobs.map((item) => { return <JobListing key={item.id} item={item} /> })}
                     </div>
                 </div>
             </section>
