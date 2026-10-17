@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { useState } from "react"
 import { FaMapMarker } from 'react-icons/fa'
 
-type Job = {
+export type Job = {
     id: string
     title: string
     type: string
@@ -62,17 +62,3 @@ const JobListing = (props: JobListingProps) => {
 }
 
 export default JobListing
-
-
-
-const sum2 = (a: number, b: number) => (a + b)
-
-
-const koko = (f: Function) => {
-    f(55);
-}
-
-koko((a: number) => { console.log(a + 5) })
-
-
-// callback function 
